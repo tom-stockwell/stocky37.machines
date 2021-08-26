@@ -13,3 +13,6 @@
 
 - include_role:
     name: jaredhocutt.google_chrome
+
+- include_role:
+    name: stocky37.core.1password
