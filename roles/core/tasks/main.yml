@@ -11,6 +11,7 @@
   vars:
     dotfiles_root: "{{ core_dotfiles_root }}"
     dotfiles_repos: "{{ core_dotfiles_repos }}"
+    dotfiles_copy_always: "{{ core_dotfiles_copy_always }}"
 
 - name: Change to zsh
   become: yes

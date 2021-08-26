@@ -20,6 +20,8 @@ core_dotfiles_repos:
     url: git@github.com:stocky37/dotfiles.git
   - name: private
     url: git@github.com:stocky37/dotfiles-private.git
+core_dotfiles_copy_always:
+  - ssh/config
 
 username: "{{ ansible_user_id }}"
 zsh_path: '/usr/bin/zsh'
