@@ -5,9 +5,16 @@
     name: "{{ core_packages | default([]) }}"
     state: present
 
-- name: Configure details
+- name: Setup dotfiles
   include_role:
     name: stocky37.core.dotfiles
   vars:
     dotfiles_root: "{{ core_dotfiles_root }}"
     dotfiles_repos: "{{ core_dotfiles_repos }}"
+
+- name: Change to zsh
+  become: yes
+  user:
+    name: "{{ username }}"
+    shell: "{{ zsh_path }}"
+ 
