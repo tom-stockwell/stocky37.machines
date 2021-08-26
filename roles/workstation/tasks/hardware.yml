@@ -7,8 +7,8 @@
 
 - when: input_hardware.stdout | lower is search("razer")
   include_role:
-    name: openrazer
+    name: stocky37.core.openrazer
 
 - when: input_hardware.stdout | lower is search("corsair")
   include_role:
-    name: ckb_next
+    name: stocky37.core.ckb_next
