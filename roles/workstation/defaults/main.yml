@@ -54,3 +54,10 @@ workstation_guake_prefs:
       'palette-name': "'Argonaut'"
     background:
       transparency: 90
+
+keybindings_key: org.gnome.desktop.wm.keybindings
+keybindings:
+  - key: switch-to-workspace-right
+    value: "['<Super>Page_Down', '<Super><Alt>Right', '<Control><Alt>Right', '<Super><Control>Right']"
+  - key: switch-to-workspace-left
+    value: "['<Super>Page_Up', '<Super><Alt>Left', '<Control><Alt>Left', '<Super><Control>Left']"

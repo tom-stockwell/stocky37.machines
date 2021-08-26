@@ -1,0 +1,8 @@
+---
+- name: Configure gnome keybindings
+  dconf:
+    key: "/{{ keybindings_key | replace('.', '/') }}/{{ binding.key }}"
+    value: "{{ binding.value }}"
+  loop: "{{ keybindings }}"
+  loop_control:
+    loop_var: binding

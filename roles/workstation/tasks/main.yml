@@ -3,4 +3,5 @@
 - include_tasks: hardware.yml
 - include_tasks: laptop.yml
   when: ansible_form_factor == "Laptop"
+- include_tasks: gnome.yml
 - include_tasks: roles.yml
