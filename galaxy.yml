@@ -43,9 +43,9 @@ tags: []
 # L(specifiers,https://python-semanticversion.readthedocs.io/en/latest/#requirement-specification). Multiple version
 # range specifiers can be set and are separated by ','
 dependencies:
-  ansible.posix:
-  community.general:
-  stocky37.core:
+  ansible.posix: '*'
+  community.general: '*'
+  stocky37.core: '*'
 
 # The URL of the originating SCM repository
 repository: http://example.com/repository
