@@ -14,6 +14,9 @@ core_packages:
   - python3-libselinux
   - python3-psutil
 
+core_flatpaks:
+  - org.gnome.Extensions
+
 core_dotfiles_root: '~/.dotfiles'
 core_dotfiles_repos:
   - name: public

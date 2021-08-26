@@ -1,10 +1,16 @@
 ---
-- name: Install core packages
+- name: Install packages
   become: yes
   package:
     name: "{{ core_packages | default([]) }}"
     state: present
 
+- name: Install flatpaks
+  flatpak:
+    state: present
+    method: user
+    name: "{{ core_flatpaks }}"
+ 
 - name: Setup dotfiles
   include_role:
     name: stocky37.core.dotfiles
