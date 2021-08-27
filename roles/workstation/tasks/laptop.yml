@@ -5,7 +5,7 @@
   vars:
     packages: "{{ laptop_packages }}"
 
-- when: lower(ansible_product_version) is search("thinkpad")
+- when: ansible_product_version | lower is search("thinkpad")
   block:
     - name: install linrunner repo
       package:
