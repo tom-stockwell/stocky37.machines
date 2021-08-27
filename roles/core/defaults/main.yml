@@ -14,9 +14,6 @@ core_packages:
   - python3-libselinux
   - python3-psutil
 
-core_flatpaks:
-  - org.gnome.Extensions
-
 core_dotfiles_root: '~/.dotfiles'
 core_dotfiles_repos:
   - name: public
@@ -29,3 +26,4 @@ core_dotfiles_copy_always:
 username: "{{ ansible_user_id }}"
 zsh_path: '/usr/bin/zsh'
 
+flathub_url: https://flathub.org/repo/flathub.flatpakrepo

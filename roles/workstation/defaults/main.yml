@@ -5,12 +5,10 @@ packages:
   - snapd
   - gnome-tweaks
 
-flatpak_remotes:
-  - https://flathub.org/repo/flathub.flatpakrepo
-
-flatpaks:
-  - spotify
+workstation_flatpaks:
+  - com.spotify.Client
   - io.atom.atom
+  - org.gnome.Extensions
 
 laptop_packages:
   - thermald

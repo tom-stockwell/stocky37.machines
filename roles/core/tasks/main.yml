@@ -5,12 +5,13 @@
     name: "{{ core_packages | default([]) }}"
     state: present
 
-- name: Install flatpaks
-  flatpak:
-    state: present
+- name: Add flathub remote for flatpak
+  flatpak_remote:
+    name: flathub
     method: user
-    name: "{{ core_flatpaks }}"
- 
+    state: present
+    flatpakrepo_url: "{{ flathub_url }}"
+
 - name: Setup dotfiles
   include_role:
     name: stocky37.core.dotfiles

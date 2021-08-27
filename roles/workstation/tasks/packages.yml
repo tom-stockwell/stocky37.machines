@@ -6,19 +6,9 @@
     state: present
   tags: dnf
 
-- name: Add flatpak remotes
-  flatpak_remote:
-    name: flathub
-    method: user
-    state: present
-    flatpakrepo_url: "{{ item }}"
-  loop: "{{ flatpak_remotes }}"
-  tags: flatpak
-
 - name: Install flatpaks
   flatpak:
-    name: "{{ item }}"
+    name: "{{ workstation_flatpaks }}"
     state: present
     method: user
-  loop: "{{ flatpaks }}"
   tags: flatpak
