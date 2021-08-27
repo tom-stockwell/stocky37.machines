@@ -20,7 +20,7 @@ development_packages:
   - asciidoctor
 
 development_flatpaks:
-  - com.visualstudio.code.oss
+  - com.visualstudio.code-oss
 
 development_snaps:
   - yq
