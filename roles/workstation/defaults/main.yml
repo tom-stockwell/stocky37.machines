@@ -59,3 +59,6 @@ keybindings:
     value: "['<Super>Page_Down', '<Super><Alt>Right', '<Control><Alt>Right', '<Super><Control>Right']"
   - key: switch-to-workspace-left
     value: "['<Super>Page_Up', '<Super><Alt>Left', '<Control><Alt>Left', '<Super><Control>Left']"
+
+workstation_gnome_extensions:
+  - 3193 # blur my shell - https://extensions.gnome.org/extension/3193/blur-my-shell/
