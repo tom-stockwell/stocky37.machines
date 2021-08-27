@@ -1,29 +1,4 @@
 ---
-core_packages:
-  - vim
-  - tree
-  - sl
-  - jq
-  - git-delta
-  - git-filter-repo
-  - the_silver_searcher
-  - zsh
-  - tuned
-
-  # required for various ansible modules
-  - python3-libselinux
-  - python3-psutil
-
-core_dotfiles_root: '~/.dotfiles'
-core_dotfiles_repos:
-  - name: public
-    url: git@github.com:stocky37/dotfiles.git
-  - name: private
-    url: git@github.com:stocky37/dotfiles-private.git
-core_dotfiles_copy_always:
-  - ssh/config
-
-username: "{{ ansible_user_id }}"
 zsh_path: '/usr/bin/zsh'
-
+username: "{{ ansible_user_id }}"
 flathub_url: https://flathub.org/repo/flathub.flatpakrepo

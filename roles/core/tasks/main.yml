@@ -5,7 +5,7 @@
     name: "{{ core_packages | default([]) }}"
     state: present
 
-- name: Add flathub remote for flatpak
+- name: Add flathub remote
   flatpak_remote:
     name: flathub
     method: user
@@ -15,10 +15,6 @@
 - name: Setup dotfiles
   include_role:
     name: stocky37.core.dotfiles
-  vars:
-    dotfiles_root: "{{ core_dotfiles_root }}"
-    dotfiles_repos: "{{ core_dotfiles_repos }}"
-    dotfiles_copy_always: "{{ core_dotfiles_copy_always }}"
 
 - name: Change to zsh
   become: yes
