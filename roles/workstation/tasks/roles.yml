@@ -1,10 +1,6 @@
 ---
 - include_role:
     name: stocky37.core.guake
-  vars:
-    guake_keybind: "{{ workstation_guake_keybind }}"
-    guake_unbind: "{{ workstation_guake_unbind }}"
-    guake_prefs: "{{ workstation_guake_prefs }}"
 
 - include_role:
     name: giovtorres.tuned

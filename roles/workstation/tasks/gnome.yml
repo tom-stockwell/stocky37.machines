@@ -10,5 +10,3 @@
 - name:  Install gnome extensions
   include_role:
     name: jaredhocutt.gnome_extensions
-  vars:
-    gnome_extension_ids: "{{  workstation_gnome_extensions }}"

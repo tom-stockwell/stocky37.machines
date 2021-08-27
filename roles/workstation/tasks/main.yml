@@ -1,7 +1,7 @@
 ---
 - include_tasks: packages.yml
-- include_tasks: hardware.yml
 - include_tasks: laptop.yml
+- include_tasks: hardware.yml
   when: ansible_form_factor == "Laptop"
 - include_tasks: gnome.yml
 - include_tasks: roles.yml
