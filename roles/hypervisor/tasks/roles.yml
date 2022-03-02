@@ -1,6 +1,6 @@
 ---
 - include_role:
-    name: wol
+    name: stocky37.core.wol
 
 - include_role:
-    name: zfs
+    name: stocky37.core.zfs
